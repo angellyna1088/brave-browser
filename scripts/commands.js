@@ -63,6 +63,7 @@ program
   .option('--gn <arg>', 'Additional gn args, in the form <key>:<value>', collect, [])
   .option('--ninja <opt>', 'Additional Ninja command-line options, in the form <key>:<value>', collect, [])
   .option('--brave_safetynet_api_key <brave_safetynet_api_key>')
+  .option('--check_deps', 'run a dependency check')
   .arguments('[build_config]')
   .action(build)
 
